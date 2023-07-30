@@ -7,7 +7,7 @@ import java.util.List;
 public interface IStudentRepository extends IRepository<Student>{
     void addStudent(Student student);
 
-    void removeStudent(Student student);
+    void remove(int code);
 
     List<Student> getAll();
 }

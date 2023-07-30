@@ -5,8 +5,10 @@ import SS6_Ke_Thua.demo.Teacher;
 import java.util.List;
 
 public class TeacherRepository implements ITeacherRepository{
+
+
     @Override
-    public void remove(Teacher teacher) {
+    public void remove(int code) {
 
     }
 

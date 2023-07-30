@@ -15,6 +15,8 @@ public class StudentService implements IStudentService{
     public void addStudent() {
         Student student=inputInfo();
         iStudentRepository.addStudent(student);
+        System.out.println("Thêm mới thành công");
+        System.out.println("===========================");
     }
     @Override
     public void displayAllStudent() {
@@ -23,6 +25,14 @@ public class StudentService implements IStudentService{
             System.out.println(student);
         }
     }
+
+    @Override
+    public void removeStudent() {
+        System.out.println("Nhập code để xóa: ");
+        int code=Integer.parseInt(scanner.nextLine());
+        iStudentRepository.remove(code);
+    }
+
 
     public Student inputInfo(){
         Student student= new Student();
