@@ -8,17 +8,18 @@ public class Product implements Serializable {
     private String madeIn;
     private int price;
     private String description;
-    Product(int code,String name,String madeIn,int price,String description){
-        this.code=code;
-        this.name=name;
-        this.madeIn=madeIn;
-        this.price=price;
-        this.description=description;
+
+    Product(int code, String name, String madeIn, int price, String description) {
+        this.code = code;
+        this.name = name;
+        this.madeIn = madeIn;
+        this.price = price;
+        this.description = description;
     }
 
     @Override
     public String toString() {
-        return this.code+"||"+this.name+"||"+this.madeIn+"||"+this.price+"||"+this.description;
+        return this.code + "||" + this.name + "||" + this.madeIn + "||" + this.price + "||" + this.description;
     }
 
     public int getCode() {

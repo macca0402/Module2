@@ -33,7 +33,7 @@ public class ReadFile {
     }
 
     public static void main(String[] args) {
-        List<String> list=read("src/SS16_IO_TEST_FILE/ReadFile");
+        List<String> list=read("G:\\CODEGYM\\MODULE2\\src\\SS16_IO_TEST_FILE\\read");
         for(String data:list ){
             String[] splitData=data.split(",");
             System.out.println(splitData[0]+"||"+splitData[1]+"||"+splitData[2]);
